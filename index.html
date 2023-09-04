@@ -1,1 +1,44 @@
-<h1> Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="date-container">
+			<div class="input-container">
+				<span>DAY</span>
+				<input type="number" placeholder="DD" id="day">
+				<small class="error-d"></small>
+			</div>
+				<div class="input-container">
+				<span>MONTH</span>
+				<input type="number" placeholder="MM" id="month">
+				<small class="error-m"></small>
+			</div>
+			<div class="input-container">
+				<span>YEAR</span>
+				<input type="number" placeholder="YYYY" id="year">
+				<small class="error-y"></small>
+			</div>
+		</div>
+		<div class="submit-block">
+			<hr>
+			<button type="submit" class="submit-btn"><img src="./assets/images/icon-arrow.svg" alt="icon"></button>
+		</div>
+
+		<div class="output">
+			<h1><span class="output-y">--</span>&nbsp;years</h1>
+			<h1><span class="output-m">--</span>&nbsp;months</h1>
+			<h1><span class="output-d">--</span>&nbsp;days</h1>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
